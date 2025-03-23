@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahara's Trade Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sahara's Trade Tool</h1>
+    
+    <div class="info-box">
+        <h2>Roblox Stats</h2>
+        <p>💰 Robux: <span id="robux">Loading...</span></p>
+        <p>📊 RAP: <span id="rap">Loading...</span></p>
+        <p>🎩 Limited Items:</p>
+        <ul id="limiteds">Loading...</ul>
+    </div>
+
+    <button id="limited-sniper">Begin Limited Sniper</button>
+    <button id="auto-trader">Begin Auto Trader</button>
+    <button id="low-ball">Begin Auto Low Ball Trades</button>
+    <button id="project-item">Project Item</button>
+
+    <div id="sub-frame" class="hidden">
+        <label for="item-link">Enter link to item:</label>
+        <input type="text" id="item-link" placeholder="Paste Roblox link here">
+        <span id="valid-check" class="hidden">✅</span>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
