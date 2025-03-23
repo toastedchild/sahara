@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Sahara's Trade Tool",
   "version": "1.0",
-  "description": "A Roblox trading tool with automatic Robux tracking.",
+  "description": "A Roblox trading tool with automatic data extraction.",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png"

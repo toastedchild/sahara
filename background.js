@@ -1,18 +1,11 @@
-// Store the latest Robux amount
-let robuxAmount = "0";
+// Import or include any additional script
+importScripts('scripts/log.js');
 
-// Listen for messages from content script
+// Original background script functionality
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    // Update our stored robux amount if new data is received
-    if (message.robux) {
-        robuxAmount = message.robux;
-        console.log("Background script received updated Robux amount:", robuxAmount);
-    }
-    
-    // If the popup is requesting data
-    if (message.action === "getRobux") {
-        sendResponse({ robux: robuxAmount });
-    }
-    
-    return true; // Keep the message channel open for async responses
+  // Handle messages from content script
+  console.log("Message received in background script:", message);
 });
+
+// Any other background functionality
+console.log("Background script initialized");
